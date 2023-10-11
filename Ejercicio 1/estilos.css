@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(16,84,176);
+    background: linear-gradient(90deg, rgba(16,84,176,1) 35%, rgba(46,198,228,1) 100%); 
+}
+
+.container{
+    height: 500px;
+    min-width: 500px;
+}
+
+.cien{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.one{
+    height: 80%;
+    width: 10%;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    left: 6%;
+    z-index: 2;
+    filter: drop-shadow(1px 1px 9px #6666662f);
+}
+
+.detalle{
+    position: absolute;
+    height: 30%;
+    width: 8%;
+    background-color: white;
+    border-radius: 5px;
+    transform: rotate(50deg);
+    left: 5%;
+    top: 10%;
+}
+
+.cero_1{
+    height: 80%;
+    width: 40%;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: -3px;
+    filter: drop-shadow(1px 1px 9px #6666662f);
+    z-index: 1;
+}
+.cero_1::after{
+    content: "";
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    border-radius: 50%;
+    background: rgb(16,84,176);
+    background: linear-gradient(90deg, rgba(16,84,176,1) 35%, rgba(46,198,228,1) 100%); 
+    z-index: 2;
+}
+
+.cero_2{
+    height: 80%;
+    width: 40%;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -25px;
+    filter: drop-shadow(1px 1px 9px #6666662f);
+}
+.cero_2::after{
+    content: "";
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    border-radius: 50%;
+    background: rgb(16,84,176);
+    background: linear-gradient(90deg, rgba(16,84,176,1) 35%, rgba(46,198,228,1) 100%); 
+    z-index: 1;
+}
+
+.info{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info h1{
+    font-size: 10rem;
+    line-height: 70%;
+}
+.info p{
+    font-size: 3rem;
+    font-weight: bold;
+}
